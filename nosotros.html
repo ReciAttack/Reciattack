@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nosotros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="p-3">
+<nav class="block w-full px-4 py-2 bg-white bg-opacity-90 sticky top-3 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999] mb-[10px]">
+  <div class="container flex flex-wrap items-center justify-between mx-auto text-slate-800">
+    <a href="Index.html"
+      class="mr-4 block cursor-pointer py-1.5 text-base text-slate-800 font-semibold">
+      <span class="text-orange-400 hover:text-orange-500 transition-colors">Reci</span><span class="text-zinc-950 hover:text-stone-700 transition-colors">Attack</span>
+    </a>
+  
+    <button id="mobile-menu-button"
+      class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+      type="button"
+      aria-label="Toggle menu">
+      <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </span>
+    </button>
+    
+    <div id="mobile-menu" class="hidden w-full lg:block lg:w-auto">
+      <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+          <a href="Index.html" class="flex items-center">Inicio</a>
+        </li>
+        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+          <a href="nosotros.html" class="flex items-center">Nosotros</a>
+        </li>
+        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+          <a href="servicios.html" class="flex items-center">Servicios</a>
+        </li>
+        <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+          <a href="contacto.html" class="flex items-center">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  
+    const button = this;
+    const isOpen = !menu.classList.contains('hidden');
+    
+    if (isOpen) {
+      button.innerHTML = `
+        <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </span>
+      `;
+    } else {
+      button.innerHTML = `
+        <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </span>
+      `;
+    }
+  });
+</script>
+    <div class="flex flex-wrap justify-center gap-6 mb-10">
+        
+        <div class="border-2 border-sky-700 rounded-lg p-4 w-64 bg-white shadow-md">
+            <h2 class="text-xl font-semibold text-sky-500 mb-2">¿PARA QUÉ ES NUESTRA PÁGINA WEB?</h2>
+            <p class="text-gray-700">En nuestra página web encontrarán información sobre nuestro emprendimiento, donde les enseñaremos el proceso de elaboración de nuestros productos hechos de forma casera y amigable con el ambiente.</p>
+        </div>
+        
+
+        
+        <div class="border-2 border-emerald-700 rounded-lg p-4 w-64 bg-white shadow-md">
+            <h2 class="text-xl font-semibold text-emerald-500 mb-2">MISIÓN DE RECIATTACK</h2>
+            <p class="text-gray-700">Promover la sostenibilidad ambiental y crear conciencia social sobre la importancia del reciclaje, fomentando prácticas de reducción, reutilización y reciclaje de manera casera y creativa.</p>
+        </div>
+
+        
+        <div class="border-2 border-sky-700 rounded-lg p-4 w-64 bg-white shadow-md">
+            <h2 class="text-xl font-semibold text-sky-500 mb-2">VISIÓN DE RECIATTACK</h2>
+            <p class="text-gray-700">Crear útiles ecoamigables e innovadores, con el objetivo de posicionar nuestros productos en el país en 5 años e implementar la cultura del reciclaje en la educación colombiana.</p>
+        </div>
+
+        
+        <div class="border-2 border-emerald-700 rounded-lg p-4 w-64 bg-white shadow-md">
+            <h2 class="text-xl font-semibold text-emerald-500 mb-2">¿QUÉ ES RECIATTACK?</h2>
+            <p class="text-gray-700">Empresa que ofrece materiales escolares hechos con material reciclado de alta calidad, elaborados artesanalmente con compromiso ambiental.</p>
+        </div>
+
+        
+        <div class="border-2 border-sky-700 rounded-lg p-4 w-64 bg-white shadow-md">
+            <h2 class="text-xl font-semibold text-sky-500 mb-2">¿POR QUÉ MATERIAL RECICLABLE?</h2>
+            <p class="text-gray-700">Porque en Colombia solo se recicla el 17% de los residuos. Queremos inculcar la importancia del reciclaje en la población joven para transformar esta realidad.</p>
+        </div>
+<div class="border-2 border-emerald-700 rounded-lg p-4 w-64 bg-white shadow-md">
+            <h2 class="text-xl font-semibold text-emerald-500 mb-2">NUESTROS VALORES!</h2>
+            <p class="flex justify-center-gray-700"> 
+              <li>Reducir</li>
+             <li>Reutizar</li>
+             <li>Reciclar</li>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
